@@ -1,0 +1,67 @@
+<!-- docs.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Documentation | xkbEdit </title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header fadein">
+    <div class="header-inner container">
+      <a href="index.html" class="brand">
+        <div class="logo">LKI</div>
+        <div class="brand-text">
+          <h1>xkbEdit</h1>
+          <p>Manage your layouts easily</p>
+        </div>
+      </a>
+      <nav class="nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="devlog.html" class="nav-link">Devlog</a>
+        <a href="downloads.html" class="nav-link">Downloads</a>
+        <a href="docs.html" class="nav-link active">Documentation</a>
+        <a href="contribute.html" class="nav-link">Contribute</a>
+        <a href="roadmap.html" class="nav-link">Roadmap</a>
+        <a href="about.html" class="nav-link">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main container fadein">
+    <h1>Documentation</h1>
+    <section>
+      <h2>Building from Source</h2>
+      <p>The xkbEdit Linux Keyboard Interpreter is written in <strong>C++</strong>. To build it from source:</p>
+      <ol>
+        <li>Ensure <code>cmake</code> and <code>g++</code> are installed.</li>
+        <li>Clone the repo: <code>git clone https://github.com/idempomlieko/xkbEdit.git</code></li>
+        <li>Build: <code>cd xkbEdit &amp;&amp; mkdir build &amp;&amp; cd build &amp;&amp; cmake .. &amp;&amp; make</code></li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>Dependencies</h2>
+      <ul>
+        <li>X11 libraries</li>
+        <li>xkbcommon (for keyboard layouts)</li>
+        <li>Optional: GTK or Qt for the UI</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Configuration</h2>
+      <p>Layouts and preferences are stored in <code>~/.config/linux-keyboard-interpreter/config.json</code>.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer fadein">
+    <p>© 2025 xkbEdit</p>
+  </footer>
+
+  <script src="js/navbar.js"></script>
+  <script src="js/fadein.js"></script>
+</body>
+</html>
+
